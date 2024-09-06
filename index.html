@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraph Borders and Combinators</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+
+
+.section-1 p {
+    border: 2px solid #007bff;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.section-2 p {
+    border: 2px dotted #28a745;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.section-3 p {
+    border: 2px dashed #dc3545;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.section-4 p {
+    border: 4px double #ffc107;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.section-5 p {
+    border: 4px groove #17a2b8;
+    padding: 10px;
+}
+
+div > p {
+    font-weight: bold;
+}
+
+.section-2 + .section-3 p {
+    background-color: #f1f1f1;
+}
+
+.section-4 ~ .section-5 p {
+    color: #495057;
+}
+
+.box {
+            width: 300px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 5px solid black;
+        }
+
+        .border-box {
+            background-color: #ffcccb;
+            background-clip: border-box;
+        }
+
+        .padding-box {
+            background-color: #90ee90;
+            background-clip: padding-box;
+        }
+
+        .content-box {
+            background-color: #add8e6;
+            background-clip: content-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+       
+        <div class="section-1">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, nemo mollitia? Dolore suscipit molestias omnis unde accusamus assumenda autem natus optio aliquid error, minus iusto esse odio eligendi earum mollitia.
+            Natus, omnis similique ea voluptate illum vero ipsam facere enim alias? Ipsa voluptate itaque earum quis numquam, iste voluptatum laudantium cum. </p>
+        </div>
+        <div class="section-2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In debitis magni neque? Blanditiis dolor eveniet nostrum quas sint autem sapiente enim rem qui, quae pariatur exercitationem. Tenetur magni veritatis fugit.
+            At architecto molestiae qui nostrum explicabo porro amet esse culpa suscipit aliquid dignissimos iusto totam aperiam, doloribus modi et nesciunt rerum veritatis quae, ratione natus sunt quia labore! Dignissimos, sed.</p>
+        </div>
+        <div class="section-3">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, blanditiis. Minima distinctio velit asperiores delectus perspiciatis officia consequatur sapiente tenetur! Nobis doloribus consectetur nam inventore sint eum neque nostrum reprehenderit!
+            Ducimus iusto aliquam quis debitis eaque doloremque labore sed expedita, cumque eveniet, est recusandae quasi suscipit laudantium quod facere adipisci voluptatibus repellendus ut tenetur dignissimos consectetur eligendi, quae dolorum. Asperiores.</p>
+        </div>
+        <div class="section-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium fuga hic tenetur sint dolore ad, est vitae repudiandae iste architecto veritatis, similique eligendi ullam qui. Non perspiciatis consectetur eum quod.
+            Ad ipsa tenetur minima labore sed vero, rerum facere hic et quos ab soluta quibusdam aperiam odio minus, doloribus est amet nam sunt earum natus consequuntur! Eaque amet beatae rerum?</p>
+        </div>
+        <div class="section-5">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero exercitationem, amet corporis ullam consequuntur dolor officia possimus aliquid eius dolore culpa, laboriosam aut, facilis assumenda! Suscipit dolores deleniti alias nobis.
+            Exercitationem, praesentium id! Culpa iste fugit minima, iure pariatur veritatis cum facere adipisci quisquam? Quo in quas optio molestias explicabo, quam consequatur harum quaerat ab, suscipit, perspiciatis veniam placeat quidem.</p>
+        </div>
+        <div class="box border-box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+    
+        <div class="box padding-box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    
+        <div class="box content-box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>       
+    </div>
+</body>
+</html>
